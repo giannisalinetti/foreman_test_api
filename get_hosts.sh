@@ -8,7 +8,7 @@ read -s PASSWORD
 
 USER=$USERNAME
 PASS=$PASSWORD
-FOREMAN_URL="https://satellite.lab.example.com"https://satellite.lab.example.com"
+FOREMAN_URL="https://satellite.lab.example.com"
 
 # Get hosts
 curl -X GET -s -k -u ${USER}:${PASS} ${FOREMAN_URL}/api/v2/hosts | python -m json.tool
